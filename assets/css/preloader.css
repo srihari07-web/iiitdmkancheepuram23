@@ -1,0 +1,109 @@
+#preloader1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom right, #ffffff, #f1f1f1);
+  z-index: 9999;
+  transition: opacity 20s;
+  opacity: 1;
+}
+/* Hide the preloader once the page has finished loading */
+#preloader1.hidden {
+  display: none;
+  opacity: 0;
+}
+
+/* Dark mode */
+body.dark #preloader1 {
+  background: linear-gradient(to bottom right, #000000, #333333);
+}
+
+body.dark .loader1 {
+  border-top-color: #c3c3c3;
+}
+
+body.dark .text1 {
+  color: #ffffff;
+}
+.loader1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #c3c3c3;
+  animation: spin 1s linear infinite;
+}
+
+.text1 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.logo1 {
+  margin-top: 20px;
+}
+.logo1 {
+  margin-top: 20px;
+}
+.logo1 img {
+    max-width: 11rem;
+    height: auto;
+    top: 9rem;
+    position: relative;
+}
+body.dark .logo1 img {
+    max-width: 11rem;
+    height: auto;
+    top: 0rem;
+    position: relative;
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hide the preloader once the page has finished loading */
+#preloader1.hidden {
+  display: none;
+}
+
+/* Awesome animation for the logo */
+.logo1 img {
+  animation: logo-animation 10s linear infinite;
+}
+
+@keyframes logo-animation {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+

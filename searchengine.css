@@ -1,0 +1,142 @@
+.search-bar {
+  font-family: var(--sub-font-family);
+  position: relative;
+}
+.nav-scroll .search-bar {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 5px;
+  right: 62rem;
+  position: absolute;
+}
+#suggestions-list{
+  color: black;
+    
+}
+.fa-search{
+  color: black;
+}
+#suggestions-list li {
+border: 1px solid white;
+}
+#search-input {
+
+  width: 300px;
+  padding: 5px;
+  font-size: 16px;
+}
+.nav-scroll .search-bar {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 5px;
+    right: 141rem;
+    position: absolute;
+  }
+
+#suggestions-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+#suggestions-list li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+#suggestions-list li:hover {
+  background-color: #3d3d3d73;
+}
+@media screen and (min-width:1200px) {
+  .nav-scroll .search-bar {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 5px;
+    right: 57rem;
+    position: absolute;
+}
+	#suggestions-list {
+    position: absolute;
+    top: 112%;
+    left: 6px;
+    right: 0;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    width: 18rem;
+}
+ 
+#suggestions-list li {
+    padding: 6px 9px;
+    cursor: pointer;
+  
+    /* width: 18rem; */
+}
+}
+@media screen and (min-width:1536px) {
+	
+
+#suggestions-list {
+    position: absolute;
+    top: 112%;
+    left: 6px;
+    right: 0;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    width: 18rem;
+}
+  .nav-scroll .search-bar {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 5px;
+    right: 74rem;
+    position: absolute;
+}
+#suggestions-list li {
+    padding: 6px 9px;
+    cursor: pointer;
+  
+    /* width: 18rem; */
+}
+}
+@media screen and (min-width:1936px) {
+  .nav-scroll .search-bar {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 5px;
+    right: 136rem;
+    position: absolute;
+}
+}

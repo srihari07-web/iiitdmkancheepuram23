@@ -1,0 +1,312 @@
+.copyright {
+		position: relative;
+	}
+
+	.para {
+		top: 12px;
+		position: absolute;
+		top: 55px;
+		right: 324px;
+		text-align: center;
+		font-family: var(--sub-font-family);
+
+	}
+
+	.md\:text-4xl {
+		font-family: var(--sub-font-family);
+
+	}
+
+
+	@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+	* {
+		margin: 0;
+		padding: 0;
+
+		box-sizing: border-box;
+	}
+
+
+
+	.object-cover {
+
+		border: 2px solid #2a4096;
+	}
+
+	h3 {
+		color: #214B8C;
+	}
+
+	.text-gray-600 {
+		--tw-text-opacity: 1;
+		color: rgb(75 85 99 / var(--tw-text-opacity));
+		justify-content: end;
+		text-align: center;
+	}
+
+	body {
+		color: #000;
+		font-family: 'Lato', sans-serif;
+		font-size: 1.4rem;
+		line-height: 1.2;
+		padding: 60px;
+	}
+
+	.data-table {
+		border-collapse: collapse;
+		border-spacing: 0;
+		margin: 15px 0;
+	}
+
+	.data-table h1,
+	.data-table h2,
+	.data-table h3,
+	.data-table h4,
+	.data-table h5,
+	.data-table h6 {
+		margin: 0;
+	}
+
+	.data-table td,
+	.data-table th {
+		border-collapse: collapse;
+		border: 1px solid #ccc;
+		margin: 0;
+		padding: 1rem;
+		vertical-align: top;
+		padding: 0.75em 0.75em;
+		color: #333;
+
+		vertical-align: middle;
+
+
+		border: solid 1px;
+		text-align: center;
+	}
+
+	.data-table.has-first-row-headers tbody tr:first-child {
+		background-color: #eee;
+	}
+
+	.head {
+		font-weight: 600;
+	}
+
+	.data-table.has-first-row-headers tbody tr:first-child * {
+		font-size: 1.6rem;
+	}
+
+	@media only screen and (max-width: 579px),
+	only screen and (min-width: 580px) and (max-width: 767px),
+	only screen and (min-width: 768px) and (max-width: 991px) {
+		.data-table.has-first-row-headers tbody tr:first-child {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width: 579px),
+	only screen and (min-width: 580px) and (max-width: 767px),
+	only screen and (min-width: 768px) and (max-width: 991px) {
+		.data-table.has-header {
+			border: none !important;
+		}
+
+		.data-table.has-header tr {
+			display: block;
+			margin-bottom: 25px;
+		}
+
+		.data-table.has-header tr td {
+			border-top-width: 0;
+			display: block;
+			width: 100% !important;
+		}
+
+		.data-table.has-header tr td:first-child {
+			border-top-width: 1px;
+		}
+
+		.data-table.has-header tr td:not(.mobile-header):before {
+			background-color: #eee;
+			content: attr(data-th);
+			display: block;
+			font-size: 1.6rem;
+			margin: -1rem -1rem 5px;
+			padding: 0.5rem 1rem;
+		}
+
+		.data-table.has-header tr td.mobile-header {
+			background-color: #241f20;
+			color: #fff;
+			font-size: 1.6rem;
+			text-transform: uppercase;
+		}
+
+		.data-table.has-header thead tr:first-child {
+			display: none;
+		}
+	}
+
+	.fa-solid,
+	.fas {
+		font-family: "Font Awesome 6 Free";
+		font-weight: 900;
+		font-size: 46px;
+		color: red;
+	}
+
+	.logo img {
+		max-height: 106px;
+		right: 46%;
+		position: relative;
+	}
+
+	.dark .text-gray-900 {
+		--tw-text-opacity: 1;
+		color: aliceblue;
+	}
+
+	.dark .data-table td,
+	.data-table th {
+		border-collapse: collapse;
+		border: 1px solid #ccc;
+
+		color: #fff;
+	}
+
+	.dark h3 {
+		color: #71EBFF;
+	}
+
+	.dark .fa-solid,
+	.fas {
+
+		color: #ffb1b1;
+	}
+
+	@media screen and (max-width:600px) {
+		.data-table {
+			border-collapse: collapse;
+			border-spacing: 0;
+			margin: 16px -33px;
+		}
+
+		.text-3xl {
+			font-size: 12px;
+			line-height: 3.25rem;
+		}
+
+		.logo img {
+			position: relative;
+			width: 18rem;
+			right: 5rem;
+			top: -3rem;
+		}
+
+		img {
+			max-width: 172%;
+			height: auto;
+		}
+	}
+
+	@media screen and (min-width:768px) {
+
+		.data-table td,
+		.data-table th {
+			border-collapse: collapse;
+			border: 1px solid #ccc;
+			margin: 0;
+			padding: 1rem;
+			vertical-align: top;
+			padding: 2.75em 3.75em;
+
+		}
+
+		.logo img {
+			max-height: 106px;
+			right: 14%;
+			position: relative;
+			top: -2rem;
+		}
+	}
+
+	@media screen and (min-width:992px) {
+		.data-table {
+			border-collapse: collapse;
+			border-spacing: 0;
+			margin: 13px -6px;
+		}
+
+		.md\:text-4xl {
+			margin-left: 7rem;
+		}
+
+	}
+
+	@media screen and (min-width:1200px) {
+		.data-table td, .data-table th {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 1rem;
+  vertical-align: top;
+  padding: 1.75em 1.75em;
+}
+.md\:text-4xl {
+  top: 0rem;
+  position: relative;
+  right: 13rem;
+}
+		.logo img {
+
+
+			right: 15%;
+		}
+
+		body.dark .logo img {
+			max-height: 106px;
+			position: relative;
+			right: 53rem;
+		}
+	}
+
+	@media screen and (min-width:1536px) {
+
+		.data-table td,
+		.data-table th {
+
+			font-size: 13px;
+		}
+
+		.md\:text-4xl {
+			top: auto;
+			position: relative;
+			right: 2rem;
+		}
+
+		body.dark .logo img {
+			max-height: 106px;
+			position: relative;
+			right: 68rem;
+			top: -3rem;
+		}
+
+		.logo img {
+
+
+			right: 11%;
+		}
+	}
+
+	@media screen and (min-width:2560px) {
+		.md\:text-4xl {
+			top: auto;
+			position: relative;
+			right: 35rem;
+		}
+
+		.logo img {
+			right: 175%;
+		}
+	}

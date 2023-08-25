@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-font-family:"Montserrat";
+  --sub-font-family:"Poppins";
+}
+/* Preloader */
+    #overlayer {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #222;
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loader {
+        color: #81cfff;
+    }
+    .loader-head{
+      color: white;
+
+    }
+    .dark .loader-head{
+color: #ffffff;
+    }
+
+body {
+  font-family: var(--main-font-family);
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.5;
+  padding: 20px;
+}
+p{
+	font-family: var(--sub-font-family);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  margin-right: 20px;
+}
+.logo-dark {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+body.dark .logo-light{
+  opacity: 0;
+visibility: hidden;
+}
+body.dark .logo-dark{
+  opacity: 1;
+  visibility: visible;
+}
+
+.logo img {
+    max-width: 14rem;
+    height: auto;
+    position: absolute;
+    right: 61rem;
+    top: 2rem;
+}
+
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main {
+  text-align: center;
+}
+
+.team-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #214B8C;
+}
+
+.team-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.team-member {
+    flex-basis: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 24px;
+    border: 2px solid #cdcdcd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.member-image {
+  height: 200px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-image img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+.member-details h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+.member-details p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .team-member {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width:920px) {
+  .logo img {
+    max-width: 11rem;
+    height: auto;
+    position: absolute;
+    right: 50rem;
+    top: 4rem;
+}
+}
+
+@media screen and (min-width:1200px) {
+  .logo img {
+    max-width: 14rem;
+    height: auto;
+    position: absolute;
+    right: 62rem;
+    top: 2.9rem;
+}
+}
+@media screen and (min-width:1536px) {
+	.logo img {
+    max-width: 19rem;
+    height: auto;
+    position: absolute;
+    right: 72rem;
+    top: 2rem;
+}
+
+}
+body.dark{
+	background-color: #191b1d;
+}
+body.dark .team-member{
+    background-color: #7f88901f !important;
+    border-radius: 24px;
+    border: 2px solid #acacac;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+body.dark .member-image {
+    height: 200px;
+    background-color: #1f1f1f42;
+}
+body.dark .member-details h2{
+	color: #fff;
+}
+body.dark .member-details p {
+ 
+    color: #4decfe;
+}
+body.dark .team-heading{
+
+ color: #93bdff;
+}

@@ -1,0 +1,257 @@
+				/* Preloader */
+    #overlayer {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #222;
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loader {
+        color: #81cfff;
+    }
+    .loader-head{
+      color: white;
+
+    }
+    .dark .loader-head{
+color: #ffffff;
+    }
+
+body.dark{
+		background-color: #202020;
+	}
+	.dark .subheader {
+  color: #54afff;
+}
+:root{
+  --indvidualpage-main-font-family:"Muli", sans-serif;
+  --indvidualpages-sub-font-family:"Poppins", sans-serif;
+}
+header h1{
+	color: #262626;
+}
+body.dark header h1{
+	color: #f7fafc;
+}
+body.dark #content {
+    background-color: #262626;
+}
+#content{
+		background-color: #edeaea;
+	}
+	body.darl.list-item p {
+
+  background-color: #000000d1;
+  color: aliceblue;
+}
+.dark .text-gray-900 {
+color: #f7fafc;
+}
+
+.dark .link{
+	color: #f7fafc;
+}
+.dark .subheaderSpecial{
+	color: #fff;
+}
+.dark table
+	body {
+		background-color: #f7fafc;
+	}
+	 body {
+    background-color: #ffffff;
+    font-family: var(--sub-font-family);
+    border-bottom: 6px #214B8C solid;
+  }
+	.container {
+		max-width: 1024px;
+		margin: auto;
+		padding: 2rem;
+	}
+
+	.para{
+		font-family: var(--indvidualpage-main-font-family);
+	}
+	.dark .paragraph {
+  
+  color: aliceblue;
+	}
+
+	.logo img {
+		max-height: 106px;
+		
+		position: relative;
+	}
+
+	.subheader {
+		font-size: 2.5rem;
+		font-weight: bold;
+		margin: 0;
+		padding: 0;
+	}
+
+	.list-item {
+		margin: 1.2rem 0;
+		padding: 0;
+		list-style: auto;
+		border-radius: 0.25rem;
+		background-color: #fff;
+		font-weight: 700;
+		box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+		transition: all 0.2s ease-in-out;
+	}
+
+	.list-item:hover {
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		transform: translateY(-2px);
+	}
+
+	.list-item a {
+		display: block;
+		padding: 1rem;
+		color: #202020;
+		text-decoration: none;
+	}
+
+	ol {
+		list-style: decimal;
+		margin: 10px 5px 5px 15px;
+	}
+
+	li {
+		background-color: #fff;
+		padding: 10px;
+	}
+
+	li::marker {
+		color: #214B8C;
+		font-weight: bold;
+	}
+
+	.list-item a:hover {
+		color: #214B8C;
+	}
+
+	.list-item p {
+		margin: 0;
+		font-size: 0.81rem;
+		line-height: 1.5rem;
+		font-weight: 500;
+	}
+.data-table td, .data-table th {
+	
+    font-size:  0.85rem;
+	font-family: var(--indvidualpage-main-font-family);
+}
+	
+	.logo-light{
+		opacity: 1;
+		visibility: visible	;
+	}
+	 .logo-dark {
+    opacity: 0;
+    visibility: hidden;
+}
+.list-item p:hover{
+color: #214B8C;
+}
+body.dark a:hover{
+  color: #00c8ff;
+}
+
+body.dark .logo-light{
+  opacity: 0;
+visibility: hidden;
+}
+body.dark .logo-dark{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.dark .paragraph1 {
+ 
+  color: aliceblue;
+}
+.dark .list-item {
+  margin: 1.2rem 0;
+  padding: 0;
+  list-style: auto;
+  border-radius: 0.25rem;
+  background-color: #272727eb;
+  font-weight: 700;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+.dark .list-item p {
+ 
+  color: antiquewhite;
+}
+.dark li::marker {
+  color: #4DDEFF;
+  font-weight: bold;
+}
+
+@media screen and (max-width:600px) {
+	body.dark .logo img {
+    max-height: 106px;
+    position: relative;
+    right: 12rem;
+}
+}
+
+
+@media only screen and (min-width: 768px){
+		body.dark .logo img {
+    max-height: 106px;
+    position: relative;
+    right: 12rem;
+}
+}
+@media screen and (min-width:1200px) {
+	.logo img {
+    max-height: 106px;
+    position: relative;
+    right: 3rem;
+    top: -2rem;
+}
+	.md\:text-4xl {
+    top: 0rem;
+    
+    position: relative;
+    right: 2rem;
+}
+body.dark .logo img {
+    max-height: 106px;
+    position: relative;
+    right: 51rem;
+    top: -4rem;
+}
+	
+}
+@media only screen and (min-width:1536px){
+	.md\:text-4xl {
+    top: auto;
+    position: relative;
+    right: 14rem;
+}
+	body.dark .logo img {
+    max-height: 106px;
+    position: relative;
+    right: 59rem;
+    top: -2rem;
+}
+.logo img {
+    max-height: 106px;
+    position: relative;
+    right: 3rem;
+    top: 0rem;
+}
+
+}

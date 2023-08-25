@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Faculty - Department of Computer Science</title>
+	<meta charset="UTF-8">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+		rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.logo-container {
+  flex: 1;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.faculty-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  border: 2px solid #e5e5e5;
+}
+
+.faculty-card img {
+  width: 100%;
+  height: auto;
+  max-width: 15rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.faculty-card .content {
+  text-align: center;
+}
+
+.faculty-card h3 {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.faculty-card p {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.faculty-card hr {
+  margin: 1rem 0;
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 80%;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.search-container input[type="text"] {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  width: 10rem;
+  margin-right: 1rem;
+}
+
+.search-container button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.search-container button:hover {
+  background-color: #0062cc;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .logo-container {
+    margin-bottom: 1rem;
+  }
+
+  .search-container {
+    order: -1;
+    margin-top: 1rem;
+  }
+
+  .search-container input[type="text"] {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* Responsive styles for the faculty cards */
+@media (min-width: 768px) {
+  .faculty-card {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 70rem;
+    margin: 2rem auto;
+  }
+
+  .faculty-card img {
+    max-width: 16rem;
+    margin-right: 4rem;
+    margin-bottom: 0;
+    border: 4px solid #214B8C;
+  }
+
+  .faculty-card .content {
+    text-align: left;
+  }
+
+  .faculty-card h3 {
+    font-size: 2.5rem;
+  }
+
+  .faculty-card p {
+    font-size: 1.5rem;
+  }
+
+  .faculty-card hr {
+    width: 40%;
+    margin: 2rem 0;
+  }
+}
+
+/* Styles for the heading and subheading */
+h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+h2 {
+  color: #214B8C;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#search-input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  width: 10rem;
+  margin-right: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0062cc;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+	</style>
+</head>
+
+<body>
+	<div class="logo-container">
+		<a  href="#"><img src="iiitdmmembers/SecondaryLogo (2).webp" alt="Logo"></a>
+	</div>
+	
+	<h1>Faculty</h1>
+	<h2>Department of Computer Science</h2>
+	
+	<div class="search-container">
+		<input type="text" id="search-input" placeholder="Search faculty...">
+		<button type="button" onclick="search()">Search</button>
+	</div>
+	<div class="container faculty-card">
+		<img src="iiitdmmembers/krishnapriya jpeg.jpeg" alt="Dr. Bhukya Krishna Priya">
+		<div class="content">
+			<h3>Dr. Bhukya Krishna Priya</h3>
+			<p><strong>Assistant Professor</strong></p>
+			<p><strong>Ph.D:</strong> NIT Tiruchirappalli</p>
+			<p><strong>Research Interests:</strong> Computer Architecture, Memory Technologies, Machine Learning, Image
+				Processing, Vehicular Networks.</p>
+			<hr>
+			<p><strong>E-mail:</strong> krishnapriya@iiitdm.ac.in</p>
+			<p><strong>Room No:</strong> 119 E</p>
+		</div>
+	</div>
+	
+	<div class="container faculty-card">
+		<img src="iiitdmmembers/jagadeesh.jpg" alt="Dr. John Doe">
+		<div class="content">
+			<h3>Dr. Jagadeesh Kakarla</h3>
+			<p><strong>Associate Professor</strong></p>
+			<p><strong>Ph.D:</strong>NIT
+			Rourkela</p>
+			<p><strong>Research Interests:</strong> Wireless Sensor Networks
+			, Adhoc Networks
+			, Internet of Things
+			, Medical Image processing</p>
+			<hr>
+			<p><strong>E-mail:</strong>jagadeeshk@iiitdm.ac.in</p>
+			<p><strong>Room No:</strong>310 K</p>
+		</div>
+	</div>
+	<div class="container faculty-card">
+		<img src="iiitdmmembers/jayshree.jpg" alt="Dr. John Doe">
+		<div class="content">
+			<h3>Dr. Jaishree Mayank</h3>
+			<p><strong>Assistant Professor</strong></p>
+			<p><strong>Ph.D:</strong>Indian Institute of Technology Patna</p>
+			<p><strong>Research Interests:</strong>Scheduling Strategies in Real-time/ Cyber Physical Systems,
+			, Algorithms for Smart Grids and Electric Vehicle Problems</p>
+			<hr>
+			<p><strong>E-mail:</strong>jaishree@iiitdm.ac.in</p>
+			<p><strong>Room No:</strong>308G</p>
+			
+		</div>
+	</div>
+	<div class="container faculty-card">
+		<img src="iiitdmmembers/masilamani (2).jpg" alt="Dr. John Doe">
+		<div class="content">
+			<h3>Dr. Masilamani V</h3>
+			<p><strong>Associate Professor and HOD</strong></p>
+			<p><strong>Ph.D:</strong>Indian Institute of Technology, Madras</p>
+			<p><strong>Research Interests:</strong>Image Processing and Computer Vision
+			, Machine Learning
+			, Algorithms and Data Structures
+			, Theory of Computing</p>
+			<hr>
+			<p><strong>E-mail:</strong>masila@iiitdm.ac.in</p>
+			<p><strong>Room No:</strong>108-B</p>
+	
+		</div>
+	</div>
+	<div class="container faculty-card">
+		<img src="iiitdmmembers/munees.jpeg" alt="Dr. John Doe">
+		<div class="content">
+			<h3>Mr. Muneeswaran P</h3>
+			<p><strong><p><strong>Temporary Faculty</strong></p></strong></p>
+			<p><strong>Ph.D:</strong>Indian Institute of Technology Mandi</p>
+			<p><strong>Research Interests:</strong>Irregular Workload Balancing, Scalable Algorithms, Formal Concept Analysis, and Social Network Analysis</p>
+			<hr>
+			<p><strong>E-mail:</strong>munees@iiitdm.ac.in</p>
+			<p><strong>Room No:</strong>310-N</p>
+	
+		</div>
+	</div>
+	<div class="container faculty-card">
+		<img src="iiitdmmembers/noor.jpeg" alt="Dr. John Doe">
+		<div class="content">
+			<h3>Dr. Noor Mahammad SK</h3>
+			<p><strong>
+					<p><strong>Associate Professor</strong></p>
+				</strong></p>
+			<p><strong>Ph.D:</strong>Indian Institute of Technology Madras</p>
+			<p><strong>Research Interests:</strong>Software for VLSI Design
+			, Evolvable Hardware
+			, Reconfigurable Computing
+			, Network System Design
+			, High Performance VLSI Architectures for Digital Signal Processing
+			, Packet Processing Architectures and Algorithms
+			, Computer Architecture</p>
+			<hr>
+			<p><strong>E-mail:</strong>noor@iiitdm.ac.in</p>
+			<p><strong>Room No:</strong>B3, PEMS Block</p>
+	
+		</div>
+	</div>
+	<div class="container faculty-card">
+		<img src="iiitdmmembers/pandiri.jpg" alt="Dr. John Doe">
+		<div class="content">
+			<h3>Dr. Pandiri Venkatesh</h3>
+			<p><strong>
+					<p><strong>Assistant Professor</strong></p>
+				</strong></p>
+			<p><strong>Ph.D:</strong>University of Hyderabad</p>
+			<p><strong>Research Interests:</strong>Combinatorial Optimization
+			, Reinforcement learning for optimization
+			, Soft computing
+			, Heuristics
+			, Metaheuristics
+			, Swarm Intelligence
+			, Multi-objective Optimization</p>
+			<hr>
+			<p><strong>E-mail:</strong>venkateshpandiri@iiitdm.ac.in</p>
+			<p><strong>Room No:</strong>109M, Laboratory Complex</p>
+	
+		</div>
+	</div>
+		<div class="container faculty-card">
+			<img src="iiitdmmembers/preeth.jpeg" alt="Dr. John Doe">
+			<div class="content">
+				<h3>Dr. Preeth R</h3>
+				<p><strong>
+						<p><strong>Assistant Professor</strong></p>
+					</strong></p>
+				<p><strong>Ph.D:</strong>National Institute of Technology, Tiruchirappalli</p>
+				<p><strong>Research Interests:</strong>
+					IoT and Cloud Computing
+					, Machine Learning
+					, Computer Vision
+					, Computer Networks
+					, Data Science</p>
+				<hr>
+				<p><strong>E-mail:</strong>preeth@iiitdm.ac.in</p>
+				<p><strong>Room No:</strong>310F, Laboratory Block</p>
+		
+			</div>
+		</div>
+		<div class="container faculty-card">
+			<img src="iiitdmmembers/rahul.jpeg" alt="Dr. John Doe">
+			<div class="content">
+				<h3>Dr. Rahul Raman</h3>
+				<p><strong>
+						<p><strong>Assistant Professor</strong></p>
+					</strong></p>
+				<p><strong>Ph.D:</strong>National Institute of Technology Rourkela</p>
+				<p><strong>Research Interests:</strong>
+					Computer Vision, Image Processing, Machine Learning, Biometrics, Visual Surveillance, Aesthetics</p>
+				<hr>
+				<p><strong>E-mail:</strong>rahul@iiitdm.ac.in |</p>
+				<p><strong>Room No:</strong>310 I, Laboratory Complex</p>
+		
+			</div>
+		</div>
+		<div class="container faculty-card">
+			<img src="iiitdmmembers/padhy.jpg" alt="Dr. John Doe">
+			<div class="content">
+				<h3>Dr. Ram Prasad Padhy</h3>
+				<p><strong>
+						<p><strong>Assistant Professor</strong></p>
+					</strong></p>
+				<p><strong>Ph.D:</strong>National Institute of Technology Rourkela</p>
+				<p><strong>Research Interests:</strong>
+					Machine Learning
+					, Deep Learning
+					, Computer Vision
+					, Autonomous Robotics
+					, Sensor Fusion
+					, Multi-iiitdm Perception
+					, Visual Surveillance</p>
+				<hr>
+				<p><strong>E-mail:</strong>rampadhy@iiitdm.ac.in |</p>
+				<p><strong>Room No:</strong>310-G, Laboratory Comp</p>
+		
+			</div>
+		</div>
+		<div class="container faculty-card">
+			<img src="iiitdmmembers/sadagopan (1).jpeg" alt="Dr. John Doe">
+			<div class="content">
+				<h3>Dr. Sadagopan N</h3>
+				<p><strong>
+						<p><strong>Associate Professor</strong></p>
+					</strong></p>
+				<p><strong>Ph.D:</strong>IIT Madras</p>
+				<p><strong>Research Interests:</strong>
+					Graph theory and Combinatorics
+					, Data Structures and Algorithms
+					, Computer Networks
+					, Database Systems
+					, Graph Library Generation Package</p>
+				<hr>
+				<p><strong>E-mail:</strong>sadagopan@iiitdm.ac.in |</p>
+				<p><strong>Room No:</strong>310 I, Laboratory Complex</p>
+		
+			</div>
+		</div>
+		<div class="container faculty-card">
+			<img src="iiitdmmembers/sanjeeth.jpg" alt="Dr. John Doe">
+			<div class="content">
+				<h3>Dr. Sanjeet Kumar Nayak</h3>
+				<p><strong>
+						<p><strong>Assistant Professor</strong></p>
+					</strong></p>
+				<p><strong>Ph.D:</strong>Indian Institute of Technology Patna</p>
+				<p><strong>Research Interests:</strong>
+					IoT and Cloud Computing
+					, Applied Cryptography
+					, Multimedia Encryption Techniques
+					, Blockchain Technology</p>
+				<hr>
+				<p><strong>E-mail:</strong>sanjeetn@iiitdm.ac.in |</p>
+				<p><strong>Room No:</strong>310-C Laboratory Complex</p>
+		
+			</div>
+		</div>
+<div class="container faculty-card">
+	<img src="iiitdmmembers/raghavans.jpeg" alt="Dr. John Doe">
+	<div class="content">
+		<h3>Dr. Santhanam Raghavan</h3>
+		<p><strong>
+				<p><strong>Assistant Professor</strong></p>
+			</strong></p>
+		<p><strong>Ph.D:</strong>National Institute of Technology Karnataka</p>
+		<p><strong>Research Interests:</strong>
+			Cloud Computing, Membrane Computing, Machine Learning</p>
+		<hr>
+		<p><strong>E-mail:</strong>raghavans@iiitdm.ac.in |</p>
+		<p><strong>Room No:</strong>310 - B, Laboratory Complex</p>
+	
+
+	</div>
+</div>
+<div class="container faculty-card">
+	<img src="iiitdmmembers/SIVASELVANB (1).jpeg" alt="Dr. John Doe">
+	<div class="content">
+		<h3>Dr. Sivaselvan B</h3>
+		<p><strong>
+				<p><strong>Associate Professor</strong></p>
+			</strong></p>
+		<p><strong>Ph.D:</strong>National Institute of Technology, Tiruchirappalli</p>
+		<p><strong>Research Interests:</strong>
+			Knowledge & Data Engineering, Data Analytics, Human Computer Interaction, Evolutionary Computation
+			Strategies</p>
+		<hr>
+		<p><strong>E-mail:</strong>sivaselvanb@iiitdm.ac.in</p>
+
+
+	</div>
+</div>
+<div class="container faculty-card">
+	<img src="iiitdmmembers/umarani.jpeg" alt="Dr. John Doe">
+	<div class="content">
+		<h3>Dr. Umarani Jayaraman</h3>
+		<p><strong>
+				<p><strong>Assistant Professor</strong></p>
+			</strong></p>
+		<p><strong>Ph.D:</strong>Indian Institute of Technology Kanpur</p>
+		<p><strong>Research Interests:</strong>
+			Biometrics
+			, Pattern Recognition
+			, Deep Learning
+			, Digital Image Processing
+			, Human Computer Interaction</p>
+		<hr>
+		<p><strong>E-mail:</strong>umarani@iiitdm.ac.in</p>
+		<P><strong>E-mail:</strong>219M, Second floor, Laboratory Block</P>
+
+
+	</div>
+</div>
+		</body>
+		<script>
+			function search() {
+					let input = document.getElementById("search-input").value;
+					input = input.toLowerCase();
+					let facultyCards = document.getElementsByClassName("faculty-card");
+					for (let i = 0; i < facultyCards.length; i++) {
+						let name = facultyCards[i].getElementsByClassName("content")[0].getElementsByTagName("h3")[0];
+						if (name.innerHTML.toLowerCase().indexOf(input) > -1) {
+							facultyCards[i].style.display = "";
+						} else {
+							facultyCards[i].style.display = "none";
+						}
+					}
+				}
+
+		</script>
